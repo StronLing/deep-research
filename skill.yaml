@@ -1,0 +1,72 @@
+name: scholarly-excellence-framework
+description: |
+  Achieve scholarly excellence with global top-tier interdisciplinary research standards. 
+  Enforces authoritative source mandates, dual verification protocols, and polyphonic 
+  expertise synthesis. Essential for research papers, policy analysis, investment due 
+  diligence, and complex fact-checking requiring academic-grade rigor.
+
+version: 1.0.0
+
+author: StronLing
+email: stronling@gmail.com
+
+license: MIT
+
+tags:
+  - research
+  - academic
+  - fact-checking
+  - interdisciplinary
+  - verification
+  - citation
+  - china-studies
+  - policy-analysis
+  - due-diligence
+
+categories:
+  - research
+  - academic
+
+homepage: https://github.com/StronLing/scholarly-excellence-framework
+repository: https://github.com/StronLing/scholarly-excellence-framework
+issues: https://github.com/StronLing/scholarly-excellence-framework/issues
+
+entrypoints:
+  default: instructions.md
+
+files:
+  - skill.yaml
+  - README.md
+  - instructions.md
+  - LICENSE
+  - CHANGELOG.md
+  - references/
+  - examples/
+  - tests/
+
+# Required capabilities
+capabilities:
+  - web_search
+  - file_read
+  - file_write
+
+# Examples of when to use this skill
+examples:
+  - "分析中国半导体产业现状"
+  - "明清时期的社会救济制度研究"
+  - "台积电3nm工艺技术参数"
+  - "中国2024年GDP增长率"
+  - "比较不同法学派对信托法的解释"
+
+# Languages supported
+languages:
+  - zh
+  - en
+
+# Additional metadata
+metadata:
+  created: 2026-03-09
+  updated: 2026-03-09
+  framework_version: "1.0"
+  test_coverage: "6 scenarios"
+  documentation_pages: "11 files"
