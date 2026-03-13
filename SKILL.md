@@ -1,6 +1,7 @@
 ---
 name: scholarly-excellence-framework
 description: evaluate research ideas and academic papers
+version: 1.0.0
 ---
 
 # Scholarly Excellence Framework
