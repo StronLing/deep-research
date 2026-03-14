@@ -1,5 +1,5 @@
 ---
-name: scholarly-excellence-framework
+name: deep-research
 description: evaluate research ideas and academic papers
 version: 1.0.0
 ---
