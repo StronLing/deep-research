@@ -1,4 +1,4 @@
-# Scholarly Excellence Framework
+# Deep Research
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)]()
