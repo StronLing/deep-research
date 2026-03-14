@@ -1,5 +1,5 @@
 ---
-name: scholarly-excellence-framework
+name: deep-research
 description: Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis. Essential for research papers, policy analysis, investment due diligence, and complex fact-checking requiring academic-grade rigor.
 license: MIT
 metadata:

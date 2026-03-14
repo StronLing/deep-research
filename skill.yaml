@@ -1,4 +1,4 @@
-name: scholarly-excellence-framework
+name: deep-research
 version: 1.0.0
 description: Global top-tier interdisciplinary research standards for AI agents with source authority mandates, dual verification protocols, and polyphonic expertise synthesis
 author: StronLing
@@ -17,7 +17,7 @@ keywords:
   - methodology
   - standards
   - fact-checking
-repository: https://github.com/StronLing/scholarly-excellence-framework
+repository: https://github.com/StronLing/deep-research
 license: MIT
 categories:
   - research

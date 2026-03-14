@@ -18,7 +18,7 @@ This skill enforces rigorous research methodology including:
 ## Installation
 
 ```bash
-npx skills add StronLing/scholarly-excellence-framework -g
+npx skills add StronLing/deep-research -g
 ```
 
 ## When to Use This Skill
@@ -81,7 +81,7 @@ Skill Actions:
 ## File Structure
 
 ```
-scholarly-excellence-framework/
+deep-research/
 ├── SKILL.md                              # Core AI instructions
 ├── README.md                             # Human guide
 ├── references/
@@ -363,9 +363,9 @@ This framework synthesizes best practices from:
 
 ## Support & Community
 
-- **Documentation**: [Full documentation](https://skills.sh/StronLing/scholarly-excellence-framework)
-- **Issues**: [GitHub Issues](https://github.com/StronLing/scholarly-excellence-framework/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/StronLing/scholarly-excellence-framework/discussions)
+- **Documentation**: [Full documentation](https://skills.sh/StronLing/deep-research)
+- **Issues**: [GitHub Issues](https://github.com/StronLing/deep-research/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/StronLing/deep-research/discussions)
 
 ## Version History
 
@@ -385,5 +385,5 @@ MIT License - See [LICENSE](LICENSE) for details
 **Cite This Skill**:
 ```
 Research Excellence Institute (2026), "Scholarly Excellence Framework: Global Top-Tier Interdisciplinary Research Standards", 
-Version 1.0.0, https://skills.sh/StronLing/scholarly-excellence-framework
+Version 1.0.0, https://skills.sh/StronLing/deep-research
 ```
