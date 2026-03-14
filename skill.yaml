@@ -1,26 +1,28 @@
-name: scholarly-excellence-framework
+name: deep-research
+
+description: |
+  Academic-grade research framework for deep analysis, fact-checking, policy analysis,
+  interdisciplinary research, and structured academic writing.
+
+  Use this skill whenever the user asks to:
+  - research a topic
+  - verify claims or facts
+  - write research papers
+  - analyze policy or economics
+  - perform due diligence
+  - synthesize information from multiple sources
+  - conduct historical or scientific analysis
+
 version: 1.0.0
-description: Global top-tier interdisciplinary research standards for AI agents with source authority mandates, dual verification protocols, and polyphonic expertise synthesis
-author: StronLing
-keywords:
-  - scholarly
+
+author: Ling
+
+tags:
   - research
-  - academic
-  - excellence
-  - verification
-  - interdisciplinary
-  - source-authority
-  - citation
-  - cross-validation
-  - dual-verification
-  - polyphonic
-  - methodology
-  - standards
-  - fact-checking
-repository: https://github.com/StronLing/scholarly-excellence-framework
-license: MIT
-categories:
-  - research
-  - academic
   - analysis
-  - verification
+  - fact-checking
+  - academic
+  - policy
+  - economics
+  - history
+  - methodology
