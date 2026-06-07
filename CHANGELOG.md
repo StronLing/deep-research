@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2026-06-07
+
+### Changed
+- **Repo structure**: Delete `.skill` binary files, merge `SKILL.md` + `instructions.md` into single `SKILL.md`
+- **README**: Deduplicate inline reference content with links (401 → 266 lines)
+- **Metadata**: Unify `metadata.author` → StronLing, sync `skill.yaml` description with `SKILL.md`
+- **Version**: Bump to 1.1.2 across `SKILL.md`, `skill.yaml`, README badge
+
+### Added
+- `references/interdisciplinary-frameworks.md` — cross-disciplinary concept migration framework
+- `CONTRIBUTING.md` — contribution guidelines
+- China mainland npm mirror installation option in README
+
+### Fixed
+- Google Scholar alternatives (CNKI / 百度学术 / 万方) for China mainland users
+- Twitter citation example replaced with 微博
+- Test scenarios decoupled from Claude model names (Sonnet/Opus/Haiku → frontier/mid-tier/small)
+- Updated Accessed dates from 2024 → 2026
+- Fixed broken `stats.gov.cn/easyquery.htm` URL (403)
+- Updated `http` → `https` for Chinese government URLs
+
 ## [1.0.0] - 2026-03-09
 
 ### Added

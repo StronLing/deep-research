@@ -4,7 +4,7 @@ description: Achieve scholarly excellence with global top-tier interdisciplinary
 license: MIT
 metadata:
   author: StronLing
-  version: "1.0.0"
+  version: "1.1.2"
   category: research
   tags: [academic-research, fact-checking, interdisciplinary, verification, citation]
 ---
