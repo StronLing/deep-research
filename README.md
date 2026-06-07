@@ -18,7 +18,16 @@ This skill enforces rigorous research methodology including:
 ## Installation
 
 ```bash
+# Default (GitHub)
 npx skills add StronLing/deep-research -g
+
+# China mainland (use npm mirror if GitHub is slow)
+npx --registry https://registry.npmmirror.com/ skills add StronLing/deep-research -g
+
+# Install from local clone
+git clone https://github.com/StronLing/deep-research.git
+cd deep-research
+npx skills add . -g
 ```
 
 ## When to Use This Skill
@@ -84,148 +93,42 @@ Skill Actions:
 deep-research/
 ├── SKILL.md                              # Core AI instructions
 ├── README.md                             # Human guide
+├── CONTRIBUTING.md                       # Contribution guidelines
+├── CHANGELOG.md                          # Version history
+├── skill.yaml                            # Skill metadata
 ├── references/
 │   ├── source-authority.md               # Detailed whitelist (150+ sources)
 │   ├── source-blacklist.md               # Prohibited sources (10 categories)
 │   ├── verification-protocols.md         # 8 verification procedures
 │   ├── citation-standards.md             # Citation formats by source type
 │   └── interdisciplinary-frameworks.md   # Cross-disciplinary mappings
-├── scripts/
-│   └── verify-sources.py                 # Source verification tool (optional)
+├── examples/
+│   └── research-example.md               # Complete research application
 └── tests/
     └── scenarios.md                      # 6 test scenarios for evaluation
 ```
 
 ## Source Categories
 
-### Tier 1: Authoritative (Mandatory Priority)
+Sources are classified into three tiers. See [references/source-authority.md](references/source-authority.md) for the full 150+ source whitelist and [references/source-blacklist.md](references/source-blacklist.md) for the 10-category prohibited list.
 
-| Category | Examples |
-|----------|----------|
-| **Academic Monographs** | Borgolte, Maitland, 夫馬進专著 |
-| **Top Journals** | Nature, Science, Cell, *Social Sciences in China* |
-| **Official Data** | stats.gov.cn, OECD, World Bank, BIS |
-| **Patents** | USPTO, EPO, JPO patent documents |
-| **Standards** | ISO/IEC technical standards |
-| **Archives** | SEC filings, FOIA documents |
-
-### Tier 2: Conditionally Permitted
-
-| Category | Examples | Requirements |
-|----------|----------|--------------|
-| **Chinese Academic** | CNKI core journals | With international peer review comparison |
-| **Government White Papers** | State Council white papers | Official publication channel |
-| **Corporate Reports** | Listed company 10-K/annual reports | Original filing, not news summary |
-
-### Tier 3: Strictly Prohibited
-
-| Category | Examples |
-|----------|----------|
-| **Web Encyclopedias** | Baidu Baike, all variants |
-| **Social Media** | Zhihu, Xiaohongshu, Douyin, Weibo |
-| **Content Aggregators** | Toutiao, Tencent News, Sohu |
-| **Document Sharing** | Baidu Wenku, Doc88, Douding |
-| **Finance Portals** | East Money, 10jqka (non-official) |
+| Tier | Description | Examples |
+|------|-------------|----------|
+| **Tier 1** | Authoritative (mandatory priority) | Academic monographs, top journals, government databases, patents |
+| **Tier 2** | Conditionally permitted | CNKI core journals, government white papers, corporate filings |
+| **Tier 3** | Strictly prohibited | Web encyclopedias, social media, content aggregators, AI-generated content |
 
 ## Verification Protocols
 
-### Chinese Topic Verification
-
-**Required Steps**:
-1. Retrieve Chinese authoritative source
-2. Retrieve international authoritative source
-3. Cross-validate for consistency
-4. Document discrepancies
-5. Synthesize with attribution
-
-**Example Query Flow**:
-```
-Query: "中国2024年GDP增长率"
-
-Step 1: Retrieve stats.gov.cn preliminary data
-Step 2: Retrieve World Bank/OECD data for China
-Step 3: Compare methodologies (coverage, revisions)
-Step 4: If divergent, present range with explanation
-Step 5: Cite both sources with access dates
-```
-
-### Cross-Disciplinary Research
-
-**Concept Migration Protocol**:
-1. Identify core concept in Source Discipline
-2. Map to Target Discipline framework
-3. State theoretical justification
-4. Define applicable boundaries
-5. Provide empirical examples
-
-**Example**:
-```
-Concept: Entropy (Physics) → Organizational Management
-Justification: Both systems exhibit irreversible disorder increase
-Boundary: Only applies to closed systems with no external input
-Example: Corporate bureaucracy growth without restructuring
-```
-
-## Polyphonic Presentation
-
-### Structure Template
-
-```markdown
-## Academic Consensus
-[What top experts generally agree on, with 3-5 primary citations]
-
-## Alternative View A
-[Position, with attribution to specific scholar/school]
-- Key argument
-- Evidence base
-- Limitations
-
-## Alternative View B
-[Opposing position, with attribution]
-- Key argument
-- Evidence base
-- Limitations
-
-## Practitioner Perspective
-[Industry/frontline view, with attribution]
-- Operational constraints
-- Real-world applications
-- Deviation from theory
-
-## Synthesis
-[Integrated conclusion acknowledging uncertainty]
-- Points of agreement
-- Remaining controversies
-- Implications for practice
-```
+Eight step-by-step procedures for verifying claims across domains (Chinese data, academic, legal, corporate, historical, technical, real-time, multi-perspective synthesis). See [references/verification-protocols.md](references/verification-protocols.md).
 
 ## Citation Standards
 
-### By Source Type
+Complete citation formats for 15+ source types (academic, government, legal, corporate, archival, technical, web). See [references/citation-standards.md](references/citation-standards.md).
 
-**Academic Monograph**:
-```
-Author (Year), *Title in Italics*, Place: Publisher, p.XX.
-Example: Borgolte (2014), *Das europäische Mittelalter im Spannungsbogen des Vergleichs*, Berlin: Akademie Verlag, S.123.
-```
+## Cross-Disciplinary Integration
 
-**Journal Article**:
-```
-Author (Year), "Article Title", *Journal Name*, Vol(Issue), pp.XX-XX, DOI:xxx
-Example: 夫馬進 (1997), "中国善会善堂史研究", *《史学雑誌》*, 106(3), pp.45-67.
-```
-
-**Government Database**:
-```
-Agency (Date), "Indicator Name", Database Name, Accessed: Date, URL
-Example: 国家统计局 (2024-01-17), "2023年国内生产总值", 国家数据, Accessed: 2024-03-09, https://data.stats.gov.cn/
-```
-
-**International Organization**:
-```
-Organization (Year), *Report Title*, Place: Publisher, Dataset Code.
-Example: OECD (2024), *Economic Outlook*, Paris: OECD Publishing, EO2024.
-```
+Frameworks for responsible concept migration between disciplines. See [references/interdisciplinary-frameworks.md](references/interdisciplinary-frameworks.md).
 
 ## Anti-Patterns
 
@@ -329,28 +232,7 @@ Example: OECD (2024), *Economic Outlook*, Paris: OECD Publishing, EO2024.
 
 ## Contributing
 
-We welcome contributions from researchers, academics, and practitioners!
-
-### How to Contribute
-
-1. **Report Issues**: Found a blacklisted source being used? Missing authoritative source? Open an issue.
-2. **Suggest Sources**: Propose additions to whitelist with justification
-3. **Improve Documentation**: Clarify protocols, add examples
-4. **Add Test Scenarios**: Contribute evaluation cases for specific domains
-
-### Contribution Guidelines
-
-- **Source Additions**: Must include DOI/URL and justification for authority
-- **Protocol Changes**: Must maintain backward compatibility or version appropriately
-- **Citation Formats**: Follow established academic standards
-- **Test Scenarios**: Include minimum/quality criteria and weighting
-
-### Code of Conduct
-
-- Prioritize factual accuracy over speed
-- Respect intellectual property and attribution
-- Acknowledge limitations and uncertainty
-- Maintain neutrality in presenting contested views
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on reporting issues, suggesting sources, and submitting changes.
 
 ## Acknowledgments
 
@@ -369,12 +251,7 @@ This framework synthesizes best practices from:
 
 ## Version History
 
-- **v1.0.0** (2026-03-09) - Initial release
-  - Complete source authority framework
-  - 8 verification protocols
-  - 6 test scenarios
-  - 150+ authoritative sources documented
-  - 10-category blacklist
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ## License
 
@@ -384,6 +261,6 @@ MIT License - See [LICENSE](LICENSE) for details
 
 **Cite This Skill**:
 ```
-Research Excellence Institute (2026), "Scholarly Excellence Framework: Global Top-Tier Interdisciplinary Research Standards", 
+StronLing (2026), "Scholarly Excellence Framework: Global Top-Tier Interdisciplinary Research Standards", 
 Version 1.0.0, https://skills.sh/StronLing/deep-research
 ```
