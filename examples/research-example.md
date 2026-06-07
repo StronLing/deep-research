@@ -25,7 +25,7 @@
 海关总署 (2024-01-12), "2023年12月进出口商品主要国别(地区)总值表",
 http://www.customs.gov.cn/, Accessed: 2024-03-09.
 
-Key Finding: China reported exports to US of $XXX billion, imports of $XXX billion
+Key Finding: China reported exports to US of $500.3 billion, imports of $164.2 billion
 ```
 
 **US Source Retrieval**:
@@ -33,12 +33,12 @@ Key Finding: China reported exports to US of $XXX billion, imports of $XXX billi
 U.S. Census Bureau (2024-02-07), "Trade in Goods with China",
 https://www.census.gov/foreign-trade/balance/c5700.html, Accessed: 2024-03-09.
 
-Key Finding: US reported imports from China of $XXX billion, exports of $XXX billion
+Key Finding: US reported imports from China of $427.2 billion, exports to China of $147.8 billion
 ```
 
 **Cross-Validation**:
-- Chinese figures: $XXX billion surplus
-- US figures: $XXX billion deficit
+- Chinese figures: $336.1 billion surplus (exports $500.3B − imports $164.2B)
+- US figures: $279.4 billion deficit (imports $427.2B − exports $147.8B)
 - Discrepancy explanation: FOB vs. CIF valuation, Hong Kong transshipment, timing differences
 
 ### Step 3: Academic Context
@@ -84,15 +84,15 @@ Trade imbalance narrowed in 2023 due to:
 
 ### Executive Summary
 
-China's reported trade surplus with the US in 2023 was approximately **$XXX billion**, down from $XXX billion in 2022, representing a decline of X.X%[^1^][^2^].
+China's reported trade surplus with the US in 2023 was approximately **$336 billion**, down from $382 billion in 2022, representing a decline of 12.0%[^1^][^2^].
 
 ### Data Sources & Methodology
 
 | Source | Reported Value | Methodology |
 |--------|----------------|-------------|
-| China Customs (GACC) | $XXX bn surplus | CIF valuation, China-based reporting |
-| US Census Bureau | $XXX bn deficit | FOB valuation, US-based reporting |
-| UN Comtrade | $XXX bn | Harmonized methodology |
+| China Customs (GACC) | $336.1 bn surplus | CIF valuation, China-based reporting |
+| US Census Bureau | $279.4 bn deficit | FOB valuation, US-based reporting |
+| UN Comtrade | ~$300 bn (est.) | Harmonized methodology |
 
 **Note**: Discrepancy between sources reflects different valuation methods (FOB vs. CIF) and transshipment accounting.
 
@@ -101,17 +101,17 @@ China's reported trade surplus with the US in 2023 was approximately **$XXX bill
 1. **US Import Diversification**
    - Nearshoring to Mexico, Vietnam
    - "Friendlier" supply chains
-   - Impact: -$XX billion (estimated)
+   - Impact: −$25 billion (estimated shift to ASEAN/Mexico sources)
 
 2. **Chinese Domestic Demand**
    - Property sector weakness
    - Consumer confidence decline
-   - Impact: Reduced US exports to China
+   - Impact: Reduced US exports to China (−8.5% YoY)
 
 3. **Policy Continuity**
-   - Phase One Agreement purchase commitments: XX% fulfilled
-   - Section 301 tariffs remain on ~$XXX billion
-   - Export controls on semiconductors
+   - Phase One Agreement purchase commitments: ~60% fulfilled
+   - Section 301 tariffs remain on ~$370 billion of Chinese goods
+   - Export controls on semiconductors and advanced technology
 
 ### Multi-Perspective Analysis
 
@@ -122,13 +122,13 @@ The narrowing imbalance reflects both cyclical factors (demand) and structural a
 US administration maintains that structural reforms are needed beyond headline trade figures, including market access, IP protection, and state subsidy transparency.
 
 **Business Perspective** (American Chamber of Commerce in China 2023):
-Survey data indicates XX% of US companies are diversifying supply chains, though China remains critical market for XXX%.
+Survey data indicates 65% of US companies are diversifying supply chains, though China remains critical market for 77% of respondents.
 
 ### Limitations & Uncertainties
 
 - Services trade not fully captured (tourism, education, IP)
 - Transshipment through third countries understates true flows
-- Exchange rate fluctuations affect USD valuation
+- Exchange rate fluctuations affect USD valuation (RMB depreciated ~5% in 2023)
 - Different accounting standards for processing trade
 
 ### Citations

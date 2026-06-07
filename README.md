@@ -84,14 +84,17 @@ Skill Actions:
 deep-research/
 ├── SKILL.md                              # Core AI instructions
 ├── README.md                             # Human guide
+├── CONTRIBUTING.md                       # Contribution guidelines
+├── CHANGELOG.md                          # Version history
+├── skill.yaml                            # Skill metadata
 ├── references/
 │   ├── source-authority.md               # Detailed whitelist (150+ sources)
 │   ├── source-blacklist.md               # Prohibited sources (10 categories)
 │   ├── verification-protocols.md         # 8 verification procedures
 │   ├── citation-standards.md             # Citation formats by source type
 │   └── interdisciplinary-frameworks.md   # Cross-disciplinary mappings
-├── scripts/
-│   └── verify-sources.py                 # Source verification tool (optional)
+├── examples/
+│   └── research-example.md               # Complete research application
 └── tests/
     └── scenarios.md                      # 6 test scenarios for evaluation
 ```
