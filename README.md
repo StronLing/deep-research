@@ -1,7 +1,7 @@
 # Scholarly Excellence Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)]()
+[![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-blue.svg)]()
 [![Category: Research](https://img.shields.io/badge/Category-Research-green.svg)]()
 
 > Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis.
@@ -214,15 +214,17 @@ Frameworks for responsible concept migration between disciplines. See [reference
 
 ### Version 1.1 (Planned)
 - [ ] Add automated source verification script
-- [ ] Expand interdisciplinary frameworks (physics→economics, biology→sociology)
+- [x] Expand interdisciplinary frameworks (physics→economics, biology→sociology)
 - [ ] Add more citation styles (APA, MLA, Chicago)
 - [ ] Create interactive decision tree for source selection
+- [x] China mainland compatibility (Google Scholar alternatives, npm mirror, generic model tiers)
 
 ### Version 1.2 (Planned)
 - [ ] Add real-time source validation API
 - [ ] Expand test scenarios to 10+
 - [ ] Add domain-specific templates (legal briefs, policy memos, investment reports)
 - [ ] Multi-language support expansion (German, French, Japanese citation standards)
+- [ ] Add Chinese README (README_CN.md)
 
 ### Version 2.0 (Future)
 - [ ] Integration with Zotero/reference management
@@ -262,5 +264,5 @@ MIT License - See [LICENSE](LICENSE) for details
 **Cite This Skill**:
 ```
 StronLing (2026), "Scholarly Excellence Framework: Global Top-Tier Interdisciplinary Research Standards", 
-Version 1.0.0, https://skills.sh/StronLing/deep-research
+Version 1.1.2, https://skills.sh/StronLing/deep-research
 ```
