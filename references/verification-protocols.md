@@ -79,7 +79,7 @@ Step 4: Documentation
 | Criterion | Verification |
 |-----------|--------------|
 | Institutional Affiliation | University/research institute website |
-| Publication Record | Google Scholar citation count |
+| Publication Record | Citation count via Google Scholar, CNKI, Semantic Scholar, or 百度学术 |
 | Peer Recognition | Awards, editorial positions |
 | Conflict of Interest | Funding disclosures |
 

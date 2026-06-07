@@ -1,10 +1,5 @@
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
 # Editor files
@@ -13,45 +8,18 @@ Thumbs.db
 *~
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# Logs
-*.log
-logs/
+# Build artifacts
+*.skill
 
 # Temporary files
 tmp/
 temp/
 *.tmp
 
-# Build artifacts (if any)
-dist/
-build/
-node_modules/
-
-# Test artifacts
-test-results/
-coverage/
+# Logs
+*.log
 
 # Environment files
 .env
 .env.local
-.env.*.local
-
-# Backup files
-*.bak
-*.backup
-*copy*
-*副本*
-
-# macOS
-.AppleDouble
-.LSOverride
-
-# Windows
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-.directory

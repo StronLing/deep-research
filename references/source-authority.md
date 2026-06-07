@@ -92,10 +92,10 @@ Comprehensive guide to authoritative sources by domain.
 | Agency | Database | URL | Data Types |
 |--------|----------|-----|------------|
 | National Bureau of Statistics | 国家数据 | https://data.stats.gov.cn/ | GDP, demographics, industry |
-| People's Bank of China | 统计数据 | http://www.pbc.gov.cn/ | Monetary, financial stability |
-| CSRC | 信息披露 | http://www.csrc.gov.cn/ | Market regulation, filings |
-| Ministry of Finance | 财政数据 | http://www.mof.gov.cn/ | Budget, fiscal policy |
-| State Administration of Foreign Exchange | 外汇储备 | http://www.safe.gov.cn/ | Balance of payments |
+| People's Bank of China | 统计数据 | https://www.pbc.gov.cn/ | Monetary, financial stability |
+| CSRC | 信息披露 | https://www.csrc.gov.cn/ | Market regulation, filings |
+| Ministry of Finance | 财政数据 | https://www.mof.gov.cn/ | Budget, fiscal policy |
+| State Administration of Foreign Exchange | 外汇储备 | https://www.safe.gov.cn/ | Balance of payments |
 
 ### United States
 | Agency | Database | Data Types |
@@ -130,7 +130,7 @@ Comprehensive guide to authoritative sources by domain.
 - **Supreme People's Court Gazette**: https://www.court.gov.cn/
   - Important cases, judicial interpretations
   
-- **Ministry of Justice**: http://www.moj.gov.cn/
+- **Ministry of Justice**: https://www.moj.gov.cn/
   - Administrative regulations
 
 ### United States
