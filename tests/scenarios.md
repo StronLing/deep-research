@@ -18,7 +18,7 @@ Test scenarios for evaluating skill quality across different models.
   - Chinese: stats.gov.cn official release
   - International: World Bank or OECD data
   - Explicit cross-comparison
-- **Haiku pitfall**: Only retrieves Baidu Baike or Zhihu summary
+- **Small model pitfall**: Only retrieves Baidu Baike or Zhihu summary
 - **Weight**: 5 (critical)
 
 #### 2. Temporal Accuracy
@@ -26,7 +26,7 @@ Test scenarios for evaluating skill quality across different models.
 - **Quality criteria**: 
   - Notes "5.2% (National Bureau of Statistics, final figure, January 2024)"
   - Distinguishes preliminary vs. final
-- **Haiku pitfall**: Uses outdated preliminary figures
+- **Small model pitfall**: Uses outdated preliminary figures
 - **Weight**: 4
 
 #### 3. Policy Context
@@ -35,7 +35,7 @@ Test scenarios for evaluating skill quality across different models.
   - Cites specific target from Government Work Report
   - Discusses whether target was met
   - References relevant policy context
-- **Haiku pitfall**: No policy context at all
+- **Small model pitfall**: No policy context at all
 - **Weight**: 3
 
 #### 4. Citation Format
@@ -44,7 +44,7 @@ Test scenarios for evaluating skill quality across different models.
   - Proper citation format for both Chinese and international sources
   - Access dates included
   - URLs or database references
-- **Haiku pitfall**: No citations or only "according to reports"
+- **Small model pitfall**: No citations or only "according to reports"
 - **Weight**: 4
 
 ### Output Validation
@@ -71,7 +71,7 @@ Test scenarios for evaluating skill quality across different models.
   - International Sinology: *Cambridge History of China* or equivalent
   - Chinese authoritative: 中华书局点校本 or CSSCI journal
   - Explicit comparison of perspectives
-- **Haiku pitfall**: Only cites Chinese web encyclopedia or popular history book
+- **Small model pitfall**: Only cites Chinese web encyclopedia or popular history book
 - **Weight**: 5 (critical)
 
 #### 2. Primary Source Reference
@@ -80,7 +80,7 @@ Test scenarios for evaluating skill quality across different models.
   - Specific reference to 《明实录》 or 《明史》
   - Notes edition (e.g., 中华书局点校本)
   - Cites specific historian's analysis of primary sources
-- **Haiku pitfall**: No primary source awareness
+- **Small model pitfall**: No primary source awareness
 - **Weight**: 4
 
 #### 3. Scholarly Attribution
@@ -89,7 +89,7 @@ Test scenarios for evaluating skill quality across different models.
   - Names specific scholars (e.g., 宫崎市定, Ping-ti Ho)
   - Attributes specific interpretations to named scholars
   - Notes different historiographical schools
-- **Haiku pitfall**: General claims without attribution
+- **Small model pitfall**: General claims without attribution
 - **Weight**: 4
 
 #### 4. Conceptual Nuance
@@ -98,7 +98,7 @@ Test scenarios for evaluating skill quality across different models.
   - Distinguishes 童试/乡试/会试/殿试
   - Discusses social mobility debate
   - References regional variations
-- **Haiku pitfall**: Oversimplified description
+- **Small model pitfall**: Oversimplified description
 - **Weight**: 3
 
 ### Output Validation
@@ -125,7 +125,7 @@ Test scenarios for evaluating skill quality across different models.
   - Legal framework: Maitland on trusts or modern trust law principles
   - Technical: Academic blockchain governance literature
   - Explicit bridge between concepts
-- **Haiku pitfall**: Only describes one domain superficially
+- **Small model pitfall**: Only describes one domain superficially
 - **Weight**: 5 (critical)
 
 #### 2. Concept Migration Justification
@@ -134,7 +134,7 @@ Test scenarios for evaluating skill quality across different models.
   - Explains theoretical basis for analogy
   - Notes applicable boundaries
   - Discusses limitations of analogy
-- **Haiku pitfall**: No theoretical justification
+- **Small model pitfall**: No theoretical justification
 - **Weight**: 4
 
 #### 3. Multiple Perspectives
@@ -143,7 +143,7 @@ Test scenarios for evaluating skill quality across different models.
   - Legal perspective: property vs. contract theory of trusts
   - Technical perspective: code-is-law vs. governance models
   - Regulatory perspective: SEC, EU approaches
-- **Haiku pitfall**: Single perspective presented as truth
+- **Small model pitfall**: Single perspective presented as truth
 - **Weight**: 4
 
 #### 4. Practitioner vs. Academic
@@ -152,7 +152,7 @@ Test scenarios for evaluating skill quality across different models.
   - Academic legal theory
   - Industry practitioner perspectives
   - Regulatory viewpoints
-- **Haiku pitfall**: Only news articles or blog posts
+- **Small model pitfall**: Only news articles or blog posts
 - **Weight**: 3
 
 ### Output Validation
@@ -179,7 +179,7 @@ Test scenarios for evaluating skill quality across different models.
   - Acknowledges multiple measurement methodologies
   - Notes divergence between Chinese and US reported figures
   - Explains reasons for discrepancy (FOB vs. CIF, HK transshipment, etc.)
-- **Haiku pitfall**: Single figure without context
+- **Small model pitfall**: Single figure without context
 - **Weight**: 5 (critical)
 
 #### 2. Dual Reporting
@@ -188,7 +188,7 @@ Test scenarios for evaluating skill quality across different models.
   - Specific figures from General Administration of Customs (China)
   - Specific figures from US Census Bureau
   - Analysis of methodological differences
-- **Haiku pitfall**: Uses third-party aggregator without noting source conflict
+- **Small model pitfall**: Uses third-party aggregator without noting source conflict
 - **Weight**: 5 (critical)
 
 #### 3. Methodological Transparency
@@ -197,7 +197,7 @@ Test scenarios for evaluating skill quality across different models.
   - Explains FOB vs. CIF valuation
   - Discusses Hong Kong re-export issue
   - Notes timing differences in reporting
-- **Haiku pitfall**: No methodological discussion
+- **Small model pitfall**: No methodological discussion
 - **Weight**: 4
 
 #### 4. Presentation of Range
@@ -206,7 +206,7 @@ Test scenarios for evaluating skill quality across different models.
   - Presents range: "China reports $X, US reports $Y"
   - Notes which methodology is used by which organization
   - Avoids false precision
-- **Haiku pitfall**: Arbitrary selection without justification
+- **Small model pitfall**: Arbitrary selection without justification
 - **Weight**: 3
 
 ### Output Validation
@@ -233,7 +233,7 @@ Test scenarios for evaluating skill quality across different models.
   - Direct citation from flk.npc.gov.cn (National Laws Database)
   - Quotes official text
   - Notes effective date (2021-01-01)
-- **Haiku pitfall**: Cites second-hand summary or legal blog
+- **Small model pitfall**: Cites second-hand summary or legal blog
 - **Weight**: 5 (critical)
 
 #### 2. English Translation Comparison
@@ -242,7 +242,7 @@ Test scenarios for evaluating skill quality across different models.
   - Notes official translation vs. scholarly translation
   - Cites specific translation (e.g., NPC official, Chinalawinfo)
   - Notes translation difficulties if relevant
-- **Haiku pitfall**: Translation without attribution
+- **Small model pitfall**: Translation without attribution
 - **Weight**: 3
 
 #### 3. Academic Legal Commentary
@@ -251,7 +251,7 @@ Test scenarios for evaluating skill quality across different models.
   - Cites Chinese legal scholar (e.g., 王利明, 杨立新)
   - References comparative law perspective
   - Notes implementation issues
-- **Haiku pitfall**: No scholarly commentary
+- **Small model pitfall**: No scholarly commentary
 - **Weight**: 4
 
 #### 4. Contextual Placement
@@ -260,7 +260,7 @@ Test scenarios for evaluating skill quality across different models.
   - Places within Chapter VI (Tort Liability)
   - Contrasts with previous Tort Liability Law
   - References related articles (1166, 1167, etc.)
-- **Haiku pitfall**: No context
+- **Small model pitfall**: No context
 - **Weight**: 3
 
 ### Output Validation
@@ -287,7 +287,7 @@ Test scenarios for evaluating skill quality across different models.
   - TSMC official investor presentation or 20-F filing
   - Specific data on yield rates, capacity, customers
   - Distinguishes announced vs. actual production
-- **Haiku pitfall**: Only tech media reports
+- **Small model pitfall**: Only tech media reports
 - **Weight**: 5 (critical)
 
 #### 2. Technical Parameter Verification
@@ -296,7 +296,7 @@ Test scenarios for evaluating skill quality across different models.
   - Specific technical parameters (transistor density, power consumption)
   - Comparison with previous node (5nm)
   - Industry benchmarks (IEDM papers, IEEE)
-- **Haiku pitfall**: Marketing specs without technical sourcing
+- **Small model pitfall**: Marketing specs without technical sourcing
 - **Weight**: 4
 
 #### 3. Industry Context
@@ -305,7 +305,7 @@ Test scenarios for evaluating skill quality across different models.
   - Competitive landscape (Samsung, Intel)
   - Customer adoption (Apple, AMD, etc.)
   - Industry analyst reports (with appropriate caveats)
-- **Haiku pitfall**: No competitive context
+- **Small model pitfall**: No competitive context
 - **Weight**: 3
 
 #### 4. Temporal Specificity
@@ -314,7 +314,7 @@ Test scenarios for evaluating skill quality across different models.
   - Notes specific quarter (e.g., Q4 2023)
   - Distinguishes roadmap vs. current production
   - Acknowledges rapid changes in semiconductor industry
-- **Haiku pitfall**: Outdated information presented as current
+- **Small model pitfall**: Outdated information presented as current
 - **Weight**: 4
 
 ### Output Validation
@@ -342,11 +342,11 @@ Quality Levels:
 
 ### Model Comparison Benchmarks
 
-| Model | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Total |
-|-------|-----------|-----------|-----------|-----------|-----------|-----------|-------|
-| Sonnet | Target: 85%+ | Target: 80%+ | Target: 75%+ | Target: 80%+ | Target: 90%+ | Target: 85%+ | Target: 82%+ |
-| Opus | Target: 90%+ | Target: 85%+ | Target: 80%+ | Target: 85%+ | Target: 95%+ | Target: 90%+ | Target: 87%+ |
-| Haiku | Target: 60%+ | Target: 50%+ | Target: 45%+ | Target: 55%+ | Target: 70%+ | Target: 60%+ | Target: 57%+ |
+| Model Tier | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Total |
+|------------|-----------|-----------|-----------|-----------|-----------|-----------|-------|
+| Frontier (e.g. Opus, GPT-4, DeepSeek-V3) | Target: 90%+ | Target: 85%+ | Target: 80%+ | Target: 85%+ | Target: 95%+ | Target: 90%+ | Target: 87%+ |
+| Mid-tier (e.g. Sonnet, GPT-4o-mini, Qwen-Max) | Target: 85%+ | Target: 80%+ | Target: 75%+ | Target: 80%+ | Target: 90%+ | Target: 85%+ | Target: 82%+ |
+| Small (e.g. Haiku, GPT-3.5, Qwen-Turbo) | Target: 60%+ | Target: 50%+ | Target: 45%+ | Target: 55%+ | Target: 70%+ | Target: 60%+ | Target: 57%+ |
 
 ### Pass/Fail Criteria
 
@@ -365,7 +365,7 @@ Quality Levels:
 4. Refine SKILL.md to address gaps
 
 ### For Model Evaluation
-1. Test same scenarios across models (Sonnet, Opus, Haiku)
+1. Test same scenarios across target models (frontier, mid-tier, small)
 2. Compare scores
 3. Identify model-specific limitations
 4. Adjust skill instructions for model capabilities

@@ -60,7 +60,7 @@ Author (Year), "Title", Working Paper Series No.XXX, Institution, URL, Accessed:
 
 **Example**:
 ```
-Acemoglu, Daron and James A. Robinson (2019), "The Emergence of Weak, Despotic and Inclusive States", NBER Working Paper No.23657, https://www.nber.org/papers/w23657, Accessed: 2024-03-09.
+Acemoglu, Daron and James A. Robinson (2019), "The Emergence of Weak, Despotic and Inclusive States", NBER Working Paper No.23657, https://www.nber.org/papers/w23657, Accessed: 2026-06-07.
 ```
 
 **Note**: Always note working paper status and check for published version.
@@ -76,9 +76,9 @@ Agency (Date), "Indicator Name", Database Name, Accessed: Date, URL.
 
 **Examples**:
 ```
-National Bureau of Statistics of China (2024-01-17), "2023年国内生产总值", National Data, Accessed: 2024-03-09, https://data.stats.gov.cn/easyquery.htm?cn=C01.
+National Bureau of Statistics of China (2024-01-17), "2023年国内生产总值", National Data, Accessed: 2026-06-07, https://data.stats.gov.cn/.
 
-U.S. Bureau of Economic Analysis (2024-02-29), "Gross Domestic Product (Third Estimate), GDP by Industry, and Corporate Profits", BEA.gov, Accessed: 2024-03-09, https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-gdp-industry-and-corporate-profits.
+U.S. Bureau of Economic Analysis (2024-02-29), "Gross Domestic Product (Third Estimate), GDP by Industry, and Corporate Profits", BEA.gov, Accessed: 2026-06-07, https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-gdp-industry-and-corporate-profits.
 ```
 
 ### International Organization Data
@@ -90,9 +90,9 @@ Organization (Year), *Report Title*, Place: Publisher, Dataset Code, Query: Para
 
 **Examples**:
 ```
-World Bank (2024), *World Development Indicators*, Washington DC: World Bank, WDI, Query: China, GDP growth (annual %), 2020-2023, Accessed: 2024-03-09.
+World Bank (2024), *World Development Indicators*, Washington DC: World Bank, WDI, Query: China, GDP growth (annual %), 2020-2023, Accessed: 2026-06-07.
 
-OECD (2024), *Economic Outlook*, Paris: OECD Publishing, Vol.2024/1, Query: China, Real GDP growth, Accessed: 2024-03-09.
+OECD (2024), *Economic Outlook*, Paris: OECD Publishing, Vol.2024/1, Query: China, Real GDP growth, Accessed: 2026-06-07.
 ```
 
 ### Legal and Regulatory
@@ -104,7 +104,7 @@ Title (Date enacted), Database, Article X, URL, Accessed: Date.
 
 **Example**:
 ```
-《中华人民共和国民法典》(2020-05-28), 国家法律法规数据库, 第1165条, https://flk.npc.gov.cn/, Accessed: 2024-03-09.
+《中华人民共和国民法典》(2020-05-28), 国家法律法规数据库, 第1165条, https://flk.npc.gov.cn/, Accessed: 2026-06-07.
 ```
 
 **US Federal Law**:
@@ -180,7 +180,7 @@ Document Title (Date), Digital Archive Name, Collection, Item ID, URL, Accessed:
 
 **Example**:
 ```
-"Trade Records of the East India Company" (1685), British Library Digital Collections, India Office Records, IOR/E/3/XXX, https://www.bl.uk/collection-items/, Accessed: 2024-03-09.
+"Trade Records of the East India Company" (1685), British Library Digital Collections, India Office Records, IOR/E/3/XXX, https://www.bl.uk/collection-items/, Accessed: 2026-06-07.
 ```
 
 ## Technical Standards
@@ -204,7 +204,7 @@ Author/Organization (Date), "Title", Website Name, URL, Accessed: Date.
 
 **Example**:
 ```
-Federal Reserve Bank of New York (2024-03-08), "Effective Federal Funds Rate", FRED, https://fred.stlouisfed.org/series/DFF, Accessed: 2024-03-09.
+Federal Reserve Bank of New York (2024-03-08), "Effective Federal Funds Rate", FRED, https://fred.stlouisfed.org/series/DFF, Accessed: 2026-06-07.
 ```
 
 **Note**: Only for official government/organization websites. Never for news articles, blogs, or aggregators.
@@ -273,7 +273,7 @@ Organization Name [@handle] (Date), "Post content", Platform, URL, Accessed: Dat
 
 **Example**:
 ```
-People's Bank of China [@PBC_Gov] (2024-03-08), "Reserve requirement ratio adjustment announcement", Twitter/X, https://twitter.com/PBC_Gov/..., Accessed: 2024-03-09.
+中国人民银行 [@央行微播] (2024-03-08), "存款准备金率调整公告", 微博, https://weibo.com/pbc, Accessed: 2026-06-07.
 ```
 
 **Note**: Only for official verified accounts. Never for individual accounts or unverified sources.
