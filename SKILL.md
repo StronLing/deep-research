@@ -1,10 +1,10 @@
 ---
 name: deep-research
-description: Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis. Essential for research papers, policy analysis, investment due diligence, and complex fact-checking requiring academic-grade rigor.
+description: Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis. Includes an operational layer for query routing, loop resilience, and quick/deep/exhaustive iteration control. Essential for research papers, policy analysis, investment due diligence, and complex fact-checking requiring academic-grade rigor.
 license: MIT
 metadata:
   author: StronLing
-  version: "1.1.2"
+  version: "1.2.0"
   category: research
   tags: [academic-research, fact-checking, interdisciplinary, verification, citation]
 ---
@@ -14,6 +14,54 @@ metadata:
 A comprehensive research methodology framework that elevates information synthesis to academic peer-review standards through systematic source verification, cross-disciplinary integration, and transparent attribution.
 
 Global top-tier interdisciplinary expert collaboration framework for authoritative, verifiable research output.
+
+## §0: Operational Layer
+
+This section defines runtime guardrails that overlay all downstream methodology (Core Principles through Advanced Protocols). It is not research methodology itself; it is a resilience layer that detects stalled execution, routes queries to the appropriate depth, and lets the user control the iteration budget. Every mechanism here is mechanical — no model judgment required.
+
+### §0.1 Loop Watchdog
+
+The watchdog guards against three failure modes: empty iteration, dead-link degradation, and diminishing returns. It operates on each invocation of the Research Workflow (Steps 1-5).
+
+| Condition | Action |
+|-----------|--------|
+| Step 2 (Dual Verification Execution) returns zero substantive sources | Re-run Step 2 with relaxed constraints: drop to Tier 2 sources ([source-authority.md](references/source-authority.md)), widen the date range by 2x |
+| A sourced URL returns 404/403 or its domain is unreachable during execution | Tag the finding `degraded_source`, demote it one tier ([source-authority.md](references/source-authority.md)), and continue execution; do not stall |
+| Two consecutive workflow passes yield < 50% new findings vs. the prior pass | Mark the iteration `stale` and increment `stale_count`; once `stale_count >= 3`, terminate execution at the current depth and output results with a `quality_cap_reached` notice |
+| An external dependency blocks progress (API down, paywall, rate limit) | Write a detailed blocker report to logs; do not silently abandon; escalate if unresolved after 3 retries |
+| Output quality plateaus — the last 3 findings all score <= 2/5 on relevance | Stop early; emit all accumulated findings tagged `early_stop`; do not keep burning iterations |
+
+The watchdog never prompts the user. All decisions are logged at decision level and stored as structured metadata in the output.
+
+### §0.2 Routing Rules
+
+Before invoking any protocol, classify the query and select the appropriate execution path. The routing decision is made once per query, not re-evaluated mid-execution. Protocols 1-8 are defined in [references/verification-protocols.md](references/verification-protocols.md); source tiers are defined in [references/source-authority.md](references/source-authority.md).
+
+| Query Characteristic | Route | Execution Protocol | Max Iterations |
+|----------------------|-------|--------------------|----------------|
+| Simple fact — one clear answer from widely agreed sources | Single-pass | Retrieve from Tier 1, verify once, output | 1 |
+| Fact with known data conflicts (e.g. China GDP estimate variance across sources) | Dual Verification | Protocol 1 — reconcile conflicting sources via independent cross-checks, output with confidence intervals | 2-3 |
+| Academic or technical question with peer-reviewed literature | Academic Protocol | Protocol 2 — consult Tier 1 academic sources, trace citations up to depth 2, produce synthesis | 3-5 |
+| Legal, regulatory, or corporate claim | Legal/Corporate Protocol | Protocol 3 or Protocol 4 — primary legal text priority; corporate data from registries and audited filings only | 2-4 |
+| History or longitudinal trend spanning 5+ years | Historical Protocol | Protocol 5 — require sources from each sub-period, flag gaps, note perspective shifts | 3-5 |
+| Technical or scientific claim (specs, parameters, experimental results) | Technical/Scientific Protocol | Protocol 6 — peer-reviewed primary literature, standards, and patent claims | 2-4 |
+| Real-time or rapidly changing situation | Real-time Protocol | Protocol 7 — require a timestamp within 24h or specify a staleness tolerance; set `degraded_source` on anything older than 7d without verification | 1-2 |
+| Multi-source controversy — opposing camps, different data, no consensus | Cross-disciplinary | Protocol 8 overlaid with Expert Positioning and Step 4 (Polyphonic Synthesis); each camp's evidence chain traced separately | 5-10 |
+| Interdisciplinary — spans two or more distinct domains | Cross-disciplinary + Dual Verification | Protocol 8 for perspective mapping, then Protocol 1 per domain to resolve within-domain conflicts; output as layered findings | 4-8 |
+
+If none of the above match, default to Single-pass and tag the output `routing_default`.
+
+### §0.3 Iteration Mode
+
+The researcher may append `mode: quick | deep | exhaustive` to any query to cap execution depth. If omitted, the default is `deep`.
+
+| Mode | Behavior | When to Use |
+|------|----------|-------------|
+| `quick` | Single-pass routing regardless of query characteristics; skip dual verification and cross-disciplinary expansion; emit the most authoritative Tier 1 source with a confidence note | Exploratory questions, preliminary background, time-sensitive requests under 2 minutes |
+| `deep` | Full routing logic per §0.2; the routed verification protocol runs to completion (vs. `quick`, which skips verification); Expert Positioning applied; standard Step 4 (Polyphonic Synthesis) | Most research queries — balances thoroughness with iteration cost |
+| `exhaustive` | Same as `deep`, plus: force Protocol 8 on any query with identifiable secondary perspectives, trace citations to depth 3, cross-verify each finding by a second independent protocol, and include a Known Gaps section in the final output | High-stakes decisions, publication-grade research, adversarial analysis |
+
+In `exhaustive` mode, the Loop Watchdog's `stale` threshold doubles to 6 (from 3) before triggering `quality_cap_reached`.
 
 ## Core Principles
 

@@ -1,6 +1,6 @@
 name: deep-research
-version: 1.1.2
-description: Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis. Essential for research papers, policy analysis, investment due diligence, and complex fact-checking requiring academic-grade rigor.
+version: 1.2.0
+description: Achieve scholarly excellence with global top-tier interdisciplinary research standards. Enforces authoritative source mandates, dual verification protocols, and polyphonic expertise synthesis. Includes an operational layer for query routing, loop resilience, and quick/deep/exhaustive iteration control. Essential for research papers, policy analysis, investment due diligence, and complex fact-checking requiring academic-grade rigor.
 author: StronLing
 keywords:
   - scholarly
