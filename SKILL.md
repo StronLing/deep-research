@@ -31,7 +31,7 @@ The watchdog guards against three failure modes: empty iteration, dead-link degr
 | An external dependency blocks progress (API down, paywall, rate limit) | Write a detailed blocker report to logs; do not silently abandon; escalate if unresolved after 3 retries |
 | Output quality plateaus — the last 3 findings all score <= 2/5 on relevance | Stop early; emit all accumulated findings tagged `early_stop`; do not keep burning iterations |
 
-The watchdog never prompts the user. All decisions are logged at decision level and stored as structured metadata in the output.
+The watchdog never prompts the user. All decisions are logged at decision level and stored as structured metadata in the output. If multiple termination conditions hold on the same pass, the first one evaluated terminates execution and determines the emitted tag.
 
 ### §0.2 Routing Rules
 
