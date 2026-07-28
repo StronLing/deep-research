@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-07-28
+
+### Added
+- **§0 Operational Layer** in `SKILL.md`: runtime guardrails overlaying the methodology
+  - §0.1 Loop Watchdog — empty-iteration, dead-link, and diminishing-returns detection with `degraded_source` / `stale` / `quality_cap_reached` / `early_stop` handling
+  - §0.2 Routing Rules — query classification → execution protocol + iteration cap
+  - §0.3 Iteration Mode — `quick | deep | exhaustive` depth control
+
+### Fixed
+- Reconciled Operational Layer cross-references to real locations: Protocols 1-8 → `references/verification-protocols.md`, source tiers → `references/source-authority.md` (verbatim spec pointed at a non-existent "§2")
+- Corrected real-time routing from Protocol 6 → Protocol 7 (Protocol 6 is Technical/Scientific)
+
+### Changed
+- Bump version to 1.2.0 across `SKILL.md`, `skill.yaml`, and README badge/footer; extend `description` to surface the operational layer
+
 ## [1.1.2] - 2026-06-07
 
 ### Changed
